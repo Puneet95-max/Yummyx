@@ -62,7 +62,7 @@ const Navbar = () => {
       isDesktop?
       //smallNavbar
 
-    <div className='h-[5rem] p-5 shadow-2xl w-[100vw] bg-white flex flex-row  relative justify-between lg:px-[8rem] sm:px-[4rem] '>
+    <div className='h-[5rem] p-5 shadow-2xl w-[100vw] bg-white flex flex-row fixed top-0 left-0  justify-between lg:px-[8rem] sm:px-[4rem] '>
 
     <div className=" text-2xl font-bold mr-8 ">
            <h2>
@@ -108,7 +108,7 @@ const Navbar = () => {
           }
     
         </div>
-      :<div className=' w-full  h-[6rem]  flex justify-center  items-center  relative  ;
+      :<div className=' w-full  h-[6rem]  flex justify-center  items-center   fixed top-0 left-0 ;
       '>
         <div className=" text-3xl font-bold mr-8 w-[18rem] lg:w-[8rem]  ">
          <h2>
