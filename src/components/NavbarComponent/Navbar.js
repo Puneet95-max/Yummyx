@@ -62,7 +62,7 @@ const Navbar = () => {
         isDesktop ?
           //smallNavbar
 
-          <div className='h-[5rem] p-5 shadow-2xl w-[100vw] bg-white flex flex-row fixed top-0 left-0  justify-between lg:px-[8rem] sm:px-[4rem] overflow-hidden '>
+          <div className='h-[4rem] p-5 shadow-2xl w-[100vw] bg-white flex flex-row fixed top-0 left-0  items-center justify-between lg:px-[8rem] sm:px-[4rem] overflow-hidden z-30 '>
 
             <div className=" text-2xl font-bold mr-8  ">
               <h2>
@@ -110,14 +110,14 @@ const Navbar = () => {
           </div>
           :
           //large Navbar
-          <div className=' w-full  h-[4rem]  flex justify-center  items-center  bg-white  fixed top-0 left-0 ;
+          <div className=' w-full  h-[5rem]  flex justify-evenly items-center  bg-white  fixed top-0 left-0  z-30
       '>
-            <div className=" text-3xl font-bold mr-8 md:mr-16 w-[18rem] lg:w-[8rem]  ">
+            <div className=" text-3xl font-bold mr-8  w-[18rem] lg:w-[8rem]  ">
               <h2>
                 Yummy<span className='text-red-600' >.</span>
               </h2>
             </div>
-            <div className='flex  ' >
+            <div className='flex'>
               <button className='relative group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'>
                 Home
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
@@ -167,7 +167,13 @@ const Navbar = () => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >
-                    <button className=' group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'  >Drop down</button>
+                    <button className=' group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px] flex items-center'  >
+                      Drop down <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                      </span>
+                    </button>
                     <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
                       &nbsp;
                     </span>
@@ -183,13 +189,13 @@ const Navbar = () => {
                 </span>
 
               </button>
-              <div className='ml-5 md:ml-24' >
-                <button className='bg-red-700 hover:bg-red-600 text-white px-6  py-2 rounded-full' >
-                  Book a Table
-                </button>
-              </div>
-
             </div>
+            <div className='ml-5 md:ml-24' >
+              <button className='bg-red-700 hover:bg-red-600 text-white px-6  py-2 rounded-full' >
+                Book a Table
+              </button>
+            </div>
+
           </div>
       }
 
