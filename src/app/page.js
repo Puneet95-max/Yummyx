@@ -1,4 +1,5 @@
 import Footer from "@/components/FooterComponent/Footer";
+import AboutPageContainer from "@/containers/AboutPageContainer/page";
 import HomePageContainer from "@/containers/HomePageContainer/page";
 
 export default function Home() {
@@ -7,9 +8,16 @@ export default function Home() {
       <section>
         <HomePageContainer />
       </section>
+
+      <section>
+        <AboutPageContainer />
+      </section>
+
       <section>
         <Footer />
       </section>
+
+
     </>
   );
 }

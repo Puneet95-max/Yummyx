@@ -25,26 +25,29 @@ const HomePageContainer = () => {
                         <section>
                             <Navbar />
                         </section>
-                        <main className=' bg-[#EEEEEE] w-full  md:px-20 px-5 md:flex md:flex-row-reverse  min-h-screen '>
-                            <motion.div
-                                initial={{ opacity: 0, scale: 1.2 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{
-                                    duration: 1,
-                                    ease: 'easeInOut'
-                                }}
-                                onAnimationComplete={() => setButtonAnimations(true)}
-                                viewport={{ once: true }}
-                                className='md:pb-10 mt-10 md:mt-0'
-                            >
-                                <Image
-                                    src={paneer}
-                                    height={500}
-                                    width={500}
-                                    className=' pt-28'
-                                    quality={100}
-                                />
-                            </motion.div>
+                        <main className=' bg-[#EEEEEE] w-full  md:px-20 px-5 md:flex md:flex-row-reverse md:items-center  min-h-screen '>
+                            <div>
+                                <motion.div
+                                    initial={{ opacity: 0, scale: 1.2 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    transition={{
+                                        duration: 1,
+                                        ease: 'easeInOut'
+                                    }}
+                                    onAnimationComplete={() => setButtonAnimations(true)}
+                                    viewport={{ once: true }}
+                                    className='md:pb-10 mt-10 md:mt-0'
+                                >
+                                    <Image
+                                        src={paneer}
+                                        height={580}
+                                        width={580}
+                                        className=' md:pt-28  pt-16'
+                                        quality={100}
+                                        alt='Image not avaible'
+                                    />
+                                </motion.div>
+                            </div>
                             <div className='md:flex md:flex-col'>
                                 <motion.div
                                     initial={{ y: 100, opacity: 0 }}
@@ -55,12 +58,12 @@ const HomePageContainer = () => {
                                     }}
                                     viewport={{ once: true }}
                                 >
-                                    <div className='flex flex-col items-center justify-center md:mt-32  md:items-start pt-16 tb-5'>
-                                        <p className='text-2xl font-bold md:text-3xl'>Enjoy Your Healthy</p>
-                                        <p className='text-2xl font-bold md:text-3xl'>Delicious Food</p>
+                                    <div className='flex flex-col items-center justify-center   md:items-start  pt-16 tb-5'>
+                                        <p className='text-2xl font-bold md:text-4xl'>Enjoy Your Healthy</p>
+                                        <p className='text-2xl font-bold md:text-4xl'>Delicious Food</p>
                                     </div>
-                                    <div className='p-5 md:pl-0  md:mr-20 md:py-4 md:text-gray-500  md:text-[12px] text-center md:text-left'>
-                                        Elevate your dining experience with us at Yummy.  Where every dish tells a story of passion and perfection.
+                                    <div className='p-5 md:pl-0  md:w-[70%] md:my-2 md:mr-20 md:py-4 md:text-gray-500  md:text-[12px] text-center md:text-left'>
+                                        Elevate your dining experience with us at Yummy.  Where every dish tells a story of passion and perfection.you will love it and repeat it.
                                     </div>
                                 </motion.div>
 
