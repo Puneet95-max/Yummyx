@@ -62,7 +62,9 @@ const Navbar = () => {
         isDesktop ?
           //smallNavbar
 
+
           <div className='h-[4rem] p-5 shadow-2xl w-[100vw] bg-white flex flex-row fixed top-0 left-0  items-center justify-between lg:px-[8rem] sm:px-[4rem] overflow-hidden z-30 '>
+
 
             <div className=" text-2xl font-bold mr-8  ">
               <h2>
