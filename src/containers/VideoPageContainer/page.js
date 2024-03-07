@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useEffect } from 'react'
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
@@ -8,6 +8,7 @@ const ReactPlayer = dynamic(() => import('react-player'), {
 });
 
 const VideoPageContainer = () => {
+
     return (
         <>
             <main className='relative h-screen w-full bg-black  '>
