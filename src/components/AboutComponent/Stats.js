@@ -76,7 +76,7 @@ const Stats = () => {
                 Ambiance
               </h2>
               <p className="text-black/70">
-                Yummy isn't just a hotel; it's an immersive experience. Step into an ambiance that seamlessly atmosphere.
+                Yummy is not just a hotel; it is an immersive experience. Step into an ambiance that seamlessly atmosphere.
               </p>
             </div>
 
