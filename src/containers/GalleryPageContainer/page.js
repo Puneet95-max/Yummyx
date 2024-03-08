@@ -4,36 +4,40 @@ import { useState, useEffect } from 'react';
 import BiggerGalleryPage from './BiggerGalleryPage';
 import SmallerGalleryPage from './SmallerGalleryPage';
 
-const Gallery = () => {
+const GalleryPageContainer = () => {
 
-    const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setIsDesktop(window.innerWidth > 600);
-      };
-  
-      // Initial check on mount
-      handleResize();
-  
-      // Add event listener for window resize
-      window.addEventListener('resize', handleResize);
-  
-      // Cleanup event listener on component unmount
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
 
-    return (
-        <>
-            {isDesktop ? (
-                <BiggerGalleryPage />
-            ) : (
-                <SmallerGalleryPage />
-            )}
-        </>
-    );
-}; s
+  useEffect(() => {
 
-export default Gallery;
+    const handleResize = () => {
+
+      setIsDesktop(window.innerWidth < 800);
+    };
+
+    handleResize();
+
+
+    window.addEventListener('resize', handleResize);
+
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      console.log(handleResize);
+    };
+  }, []);
+
+  return (
+    <>
+      <div className='' id='gallery'>
+
+        {
+          isDesktop ? (<SmallerGalleryPage />) : (<BiggerGalleryPage />)
+        }
+      </div>
+    </>
+  );
+};
+
+export default GalleryPageContainer;

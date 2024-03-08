@@ -1,49 +1,58 @@
 import React from 'react'
 import ImageGrid from './ImageGrid'
 
+
 const data = [
   {
-    "img":"/menu /1.png",
+    "img": "/menu /lunch/lunch_13.png",
     "name": "Magnum Tiste",
-    "Desc":" Lorem,deren,filde,nerada",
-    "price":"$5.95",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 500/-",
   },
   {
-    "img":"/menu /2.png",
+    "img": "/menu /lunch/lunch_14.png",
     "name": "Aut Luia",
-    "Desc":" Lorem,deren,filde,nerada",
-    "price":"$5.95",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 600/-",
   },
   {
-    "img":"/menu /3.png",
+    "img": "/menu /lunch/lunch_15.png",
     "name": "Est Elgendi",
-    "Desc":" Lorem,deren,filde,nerada",
-    "price":"$5.95",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 500/-",
   },
   {
-    "img":"/menu /4.png",
+    "img": "/menu /lunch/lunch_16.png",
     "name": "Cumque Nostrud",
-    "Desc":"Lorem ipsum dolor sit amet" ,
-    "price":"$7.95"
+    "Desc": "Lorem ipsum dolor sit amet",
+    "price": "Rs 500/-"
   },
   {
-    "img":"/menu /5.png",
-    "name": "Ullamco Labore et dolore", 
-    "Desc":"Ipsum dolor sit amet",
-    "price":"$6.95",
+    "img": "/menu /lunch/lunch_17.png",
+    "name": "Ullamco Labore et dolore",
+    "Desc": "Ipsum dolor sit amet",
+    "price": "Rs 600/-",
   },
   {
-    "img":"/menu /6.png",
-    "name": "Ullamco Labore et dolore", 
-    "Desc":"Ipsum dolor sit amet",
-    "price":"$6.95",
+    "img": "/menu /lunch/lunch_18.png",
+    "name": "Ullamco Labore et dolore",
+    "Desc": "Ipsum dolor sit amet",
+    "price": "Rs 700/-",
   }
 ]
 
 
+
 const Starters = () => {
   return (
-    <div className='h-auto my-[10rem]'><ImageGrid items={data}/> </div>
+    <>
+
+      <div className=' flex flex-col items-center justify-center px-5 text-center  pt-10'>
+        <p className='text-gray-500 py-1'>MENU</p>
+        <p className='text-3xl font-bold '> <span className='text-red-700'> Starters</span></p>
+      </div>
+      <div className='h-auto my-[3rem] '><ImageGrid items={data} /> </div>
+    </>
   )
 }
 
