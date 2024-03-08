@@ -27,7 +27,7 @@ const imgArr = [
 const ChefPageContainer = () => {
     return (
         <>
-            <main className='bg-[#EEEEEE] pb-10 md:px-20'>
+            <main className='bg-[#EEEEEE] pb-10 md:px-20' id='chefs'>
                 <div className='py-14 flex flex-col items-center justify-center '>
                     <p className='text-gray-500'>CHEFS</p>
                     <p className='text-2xl '>OUR <span className='text-red-700'> PROFESSIONAL</span>CHEFS <span></span></p>

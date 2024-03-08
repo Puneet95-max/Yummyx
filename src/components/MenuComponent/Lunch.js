@@ -3,47 +3,53 @@ import ImageGrid from './ImageGrid'
 
 const data = [
   {
-    "img":"/menu /13.png",
+    "img": "/menu /starters/starter_1.png",
     "name": "Magnum Tiste",
-    "Desc":" Lorem,deren,filde,nerada",
-    "price":"$5.95",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 400/-",
   },
   {
-    "img":"/menu /14.png",
+    "img": "/menu /starters/starter_2.png",
     "name": "Aut Luia",
-    "Desc":" Lorem,deren,filde,nerada",
-    "price":"$5.95",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 500/-",
   },
   {
-    "img":"/menu /15.png",
+    "img": "/menu /starters/starter_3.png",
     "name": "Est Elgendi",
-    "Desc":" Lorem,deren,filde,nerada",
-    "price":"$5.95",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 400/-",
   },
   {
-    "img":"/menu /16.png",
+    "img": "/menu /starters/starter_4.png",
     "name": "Cumque Nostrud",
-    "Desc":"Lorem ipsum dolor sit amet" ,
-    "price":"$7.95"
+    "Desc": "Lorem ipsum dolor sit amet",
+    "price": "Rs 500/-"
   },
   {
-    "img":"/menu /17.png",
-    "name": "Ullamco Labore et dolore", 
-    "Desc":"Ipsum dolor sit amet",
-    "price":"$6.95",
+    "img": "/menu /starters/starter_5.png",
+    "name": "Ullamco Labore et dolore",
+    "Desc": "Ipsum dolor sit amet",
+    "price": "Rs 600/-",
   },
   {
-    "img":"/menu /18.png",
-    "name": "Ullamco Labore et dolore", 
-    "Desc":"Ipsum dolor sit amet",
-    "price":"$6.95",
+    "img": "/menu /starters/starter_6.png",
+    "name": "Ullamco Labore et dolore",
+    "Desc": "Ipsum dolor sit amet",
+    "price": "Rs 600/-",
   }
 ]
 
-
 const Lunch = () => {
   return (
-    <div className='h-auto my-[10rem]'><ImageGrid items={data}/> </div>
+    <>
+
+      <div className=' flex flex-col items-center justify-center px-5 text-center  pt-10'>
+        <p className='text-gray-500 py-1'>MENU</p>
+        <p className='text-3xl font-bold '> <span className='text-red-700'> LUNCH</span></p>
+      </div>
+      <div className='h-auto my-[3rem]'><ImageGrid items={data} /> </div>
+    </>
 
   )
 }

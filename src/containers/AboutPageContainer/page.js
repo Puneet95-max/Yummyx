@@ -6,11 +6,8 @@ import aboutimg2 from "../../../public/about_images/about-2.jpg";
 import { motion } from "framer-motion";
 import Styles from "./AboutPageContainer.module.css";
 import Link from "next/link";
-import Stats from "@/components/AboutComponent/Stats";
 
 const AboutPageContainer = () => {
-   
-    
 
   const [youTubeVideo, setYouTubeVideo] = useState(false);
 
@@ -158,21 +155,21 @@ const AboutPageContainer = () => {
                   />
 
                   <div className="  absolute  bottom-0  left-1/2  transform -translate-x-1/2  ">
-                    <Link href={"/video"}>
+                    {/* <Link href={"/video"} > */}
                       <div
                         class={`${Styles.btn}  hover:cursor-pointer `}
-                        href="/video"
+                        // href="/video"
                       ></div>
-                    </Link>
+                    {/* </Link> */}
                   </div>
                 </div>
               </motion.div>
             </div>
           </div>
         </section>
-        
+
       </main>
-      <Stats/>
+
     </>
   );
 };

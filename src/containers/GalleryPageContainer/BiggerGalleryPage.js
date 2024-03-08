@@ -31,20 +31,14 @@ const BiggerGalleryPage = () => {
 
 
     const slides = [
-
-
         { 'src': '/gallery/gallery_1.jpg' },
         { 'src': '/gallery/gallery_3.jpg' },
         { 'src': '/gallery/gallery_2.jpg' },
         { 'src': '/gallery/gallery_4.jpg' },
-
         { 'src': '/gallery/gallery_5.jpg' },
         { 'src': '/gallery/gallery_6.jpg' },
         { 'src': '/gallery/gallery_7.jpg' },
         { 'src': '/gallery/gallery_8.jpg' },
-
-
-
     ];
 
     const setTweenFactor = useCallback((emblaApi) => {
