@@ -1,6 +1,7 @@
-
+"use client";
 import Chef from '@/components/ChefComponent/Chef'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 
 const imgArr = [
@@ -27,11 +28,21 @@ const imgArr = [
 const ChefPageContainer = () => {
     return (
         <>
-            <main className='bg-[#EEEEEE] pb-10 md:px-20' id='chefs'>
-                <div className='py-14 flex flex-col items-center justify-center '>
-                    <p className='text-gray-500'>CHEFS</p>
-                    <p className='text-2xl '>OUR <span className='text-red-700'> PROFESSIONAL</span>CHEFS <span></span></p>
-                </div>
+            <main className='bg-[#EEEEEE] pb-10 md:px-20 overflow-hidden' id='chefs'>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 10 }}
+                    transition={{
+                        duration: 1,
+                        ease: 'easeInOut',
+                    }}
+                    viewport={{ once: true }}
+                >
+                    <div className='py-14 flex flex-col items-center justify-center '>
+                        <p className='text-gray-500'>CHEFS</p>
+                        <p className='text-2xl '>OUR <span className='text-red-700'> PROFESSIONAL</span>CHEFS <span></span></p>
+                    </div>
+                </motion.div>
                 <div className='md:flex'>
                     {
                         imgArr.map((item, index) => {

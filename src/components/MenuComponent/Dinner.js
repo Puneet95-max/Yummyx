@@ -9,34 +9,34 @@ const data = [
     "price": "Rs 500/-",
   },
   {
-    "img": "/menu /dinner/dinner_20.png",
+    "img": "/menu /lunch/lunch_16.png",
+    "name": "Cumque Nostrud",
+    "Desc": "Lorem ipsum dolor sit amet",
+    "price": "Rs 500/-"
+  },
+  {
+    "img": "/menu /lunch/lunch_17.png",
+    "name": "Ullamco Labore et dolore",
+    "Desc": "Ipsum dolor sit amet",
+    "price": "Rs 600/-",
+  },
+  {
+    "img": "/menu /lunch/lunch_13.png",
+    "name": "Magnum Tiste",
+    "Desc": " Lorem,deren,filde,nerada",
+    "price": "Rs 500/-",
+  },
+  {
+    "img": "/menu /lunch/lunch_14.png",
     "name": "Aut Luia",
     "Desc": " Lorem,deren,filde,nerada",
     "price": "Rs 600/-",
   },
   {
-    "img": "/menu /dinner/dinner_21.png",
-    "name": "Est Elgendi",
-    "Desc": " Lorem,deren,filde,nerada",
-    "price": "Rs 600/-",
-  },
-  {
-    "img": "/menu /dinner/dinner_22.png",
+    "img": "/menu /starters/starter_4.png",
     "name": "Cumque Nostrud",
     "Desc": "Lorem ipsum dolor sit amet",
-    "price": "Rs 600/-"
-  },
-  {
-    "img": "/menu /dinner/dinner_23.png",
-    "name": "Ullamco Labore et dolore",
-    "Desc": "Ipsum dolor sit amet",
-    "price": "Rs 700/-",
-  },
-  {
-    "img": "/menu /dinner/dinner_24.png",
-    "name": "Ullamco Labore et dolore",
-    "Desc": "Ipsum dolor sit amet",
-    "price": "Rs 800/-",
+    "price": "Rs 500/-"
   }
 ]
 

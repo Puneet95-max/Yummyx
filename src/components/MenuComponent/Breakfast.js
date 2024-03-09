@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ImageGrid from './ImageGrid'
 
 const data = [
@@ -7,37 +6,37 @@ const data = [
     "img": "/menu /breakfast/breakfast_7.png",
     "name": "Magnum Tiste",
     "Desc": " Lorem,deren,filde,nerada",
-    "price": "$5.95",
+    "price": "Rs 500/-",
   },
   {
     "img": "/menu /breakfast/breakfast_8.png",
     "name": "Aut Luia",
     "Desc": " Lorem,deren,filde,nerada",
-    "price": "$5.95",
+    "price": "Rs 600/-",
   },
   {
     "img": "/menu /breakfast/breakfast_9.png",
     "name": "Est Elgendi",
     "Desc": " Lorem,deren,filde,nerada",
-    "price": "$5.95",
+    "price": "Rs 600/-",
   },
   {
     "img": "/menu /breakfast/breakfast_10.png",
     "name": "Cumque Nostrud",
     "Desc": "Lorem ipsum dolor sit amet",
-    "price": "$7.95"
+    "price": "Rs 500/-"
   },
   {
-    "img": "/menu /breakfast/breakfast_11.png",
-    "name": "Ullamco Labore et dolore",
-    "Desc": "Ipsum dolor sit amet",
-    "price": "$6.95",
+    "img": "/menu /lunch/lunch_16.png",
+    "name": "Cumque Nostrud",
+    "Desc": "Lorem ipsum dolor sit amet",
+    "price": "Rs 500/-"
   },
   {
-    "img": "/menu /breakfast/breakfast_12.png",
+    "img": "/menu /lunch/lunch_17.png",
     "name": "Ullamco Labore et dolore",
     "Desc": "Ipsum dolor sit amet",
-    "price": "$6.95",
+    "price": "Rs 600/-",
   }
 ]
 
