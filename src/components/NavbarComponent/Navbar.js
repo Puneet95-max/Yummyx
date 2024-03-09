@@ -91,17 +91,27 @@ const Navbar = () => {
           bg-white/80 rounded-lg backdrop-blur-md py-0 shadow-lg' >
                   <nav className='py-8 px-6 lg:text-center sm:text-left z-10 w-[100%] mx-auto flex-col justify-center '>
                     <div className='my-8' >
-                      <Link href='/' className="text-black/90  text-xl"  >Home</Link>
+                      <ScrollLink to="home" smooth={true} duration={500} offset={-70} onClick={() => { setIsOpen(false) }}
+                        className="text-black/90  text-xl"  >
+                        Home
+                      </ScrollLink>
                     </div>
                     <div className='my-8' >
-                      <Link href='/' className="text-black/90 text-xl" >About</Link>
+                      <ScrollLink to="about" smooth={true} duration={500} offset={-70} onClick={() => { setIsOpen(false) }}
+                        className="text-black/90  text-xl"  >
+                        About
+                      </ScrollLink>
                     </div>
                     <div className='my-8' >
-                      <Link href='/' className="text-black/90 text-xl" >Menu</Link>
+                      <ScrollLink to="menu" smooth={true} duration={500} offset={-70} onClick={() => { setIsOpen(false) }}
+                        className="text-black/90  text-xl"  >
+                        Menu
+                      </ScrollLink>
                     </div>
-                    <div className='my-8' >
-                      <Link href='/' className="text-black/90 text-xl" >Events</Link>
-                    </div>
+                    <ScrollLink to="event" smooth={true} duration={500} offset={-70}  onClick={()=>{setIsOpen(false)}}
+                        className="text-black/90  text-xl"  >
+                        Events
+                      </ScrollLink>
                   </nav>
                 </motion.div>
 
@@ -121,7 +131,7 @@ const Navbar = () => {
             <div className='flex'>
 
               <button className='relative group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'>
-              <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
+                <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
                   Home
                 </ScrollLink>
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
@@ -139,7 +149,7 @@ const Navbar = () => {
 
               </button>
               <button className='relative group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'>
-              <ScrollLink to="menu" smooth={true} duration={500} offset={-70}>
+                <ScrollLink to="menu" smooth={true} duration={500} offset={-70}>
                   Menu
                 </ScrollLink>
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
@@ -148,7 +158,7 @@ const Navbar = () => {
 
               </button>
               <button className='relative group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'>
-              <ScrollLink to="event" smooth={true} duration={500} offset={-70}>
+                <ScrollLink to="event" smooth={true} duration={500} offset={-70}>
                   Events
                 </ScrollLink>
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
@@ -157,7 +167,7 @@ const Navbar = () => {
 
               </button>
               <button className='relative group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'>
-              <ScrollLink to="chefs" smooth={true} duration={500} offset={-70}>
+                <ScrollLink to="chefs" smooth={true} duration={500} offset={-70}>
                   Chefs
                 </ScrollLink>
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
@@ -166,7 +176,7 @@ const Navbar = () => {
 
               </button>
               <button className='relative group text-base text-black/60 font-semibold hover:text-black mx-3 my-2 text-[14px]'>
-              <ScrollLink to="gallery" smooth={true} duration={500} offset={-70}>
+                <ScrollLink to="gallery" smooth={true} duration={500} offset={-70}>
                   Gallery
                 </ScrollLink>
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
@@ -197,7 +207,7 @@ const Navbar = () => {
                 </header>
               </div>
               <button className='relative group text-base text-black/60 font-semibold hover:text-black my-2 text-[14px]'>
-              <ScrollLink to="contact" smooth={true} duration={500} offset={-70}>
+                <ScrollLink to="contact" smooth={true} duration={500} offset={-70}>
                   Contact
                 </ScrollLink>
                 <span className=' h-[2px] inline-block w-0 bg-red-600 absolute left-0 -bottom-1 group-hover:w-full transition-[width] ease duration-150' >
