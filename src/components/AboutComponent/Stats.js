@@ -33,10 +33,11 @@ const Stats = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 , ease: 'easeInOut' }}
         className='w-full h-full '
+        viewport={{once: true}}
       >
         <div className="  md:flex md:flex-col lg:flex-col sm:flex sm:flex-col  bg-black/10 justify-center py-[5rem] w-[100vw] lg:h-auto xl:h-[35rem] xl:flex-row  xl:px-[10rem]  overflow-x-hidden   "
           style={{ overflowX: 'hidden' }}
@@ -56,43 +57,43 @@ const Stats = () => {
 
           {/* <section className="md:flex"> */}
 
-            <div className="  md:mx-auto  mx-4   my-8 xl:w-[20rem] lg:max-w-[16rem] md:w-[20rem]  lg:mx-auto text-center sm:mx-5 bg-white px-6 py-8 h transition-all ease-out duration-200">
-              <div className="w-[4rem] mb-4 h-[4rem] flex items-center px-4 rounded-full  mx-auto bg-red-500   ">
-                <Image src={icon1} />
-              </div>
-              <h2 className="text-xl py-6 font-bold ">
-                Impeccable Service
-              </h2>
-              <p className="text-black/70">
-                At Yummy, we understand that exceptional service is the cornerstone of a remarkable dining experience.
-              </p>
+          <div className="  md:mx-auto  mx-4   my-8 xl:w-[20rem] lg:max-w-[16rem] md:w-[20rem]  lg:mx-auto text-center sm:mx-5 bg-white px-6 py-8 h transition-all ease-out duration-200">
+            <div className="w-[4rem] mb-4 h-[4rem] flex items-center px-4 rounded-full  mx-auto bg-red-500   ">
+              <Image src={icon1} />
             </div>
+            <h2 className="text-xl py-6 font-bold ">
+              Impeccable Service
+            </h2>
+            <p className="text-black/70">
+              At Yummy, we understand that exceptional service is the cornerstone of a remarkable dining experience.
+            </p>
+          </div>
 
-            <div className="  md:mx-auto  mx-4   my-8 xl:w-[20rem] lg:max-w-[16rem] md:w-[20rem]  lg:mx-auto text-center sm:mx-5 bg-white px-6 py-8  transition-all ease-out duration-200">
-              <div className="w-[4rem] mb-4 h-[4rem] flex items-center px-4 rounded-full  mx-auto bg-red-500   ">
-                <Image src={icon2} />
-              </div>
-              <h2 className="text-xl  py-6  font-bold">
-                Ambiance
-              </h2>
-              <p className="text-black/70">
-                Yummy is not just a hotel; it is an immersive experience. Step into an ambiance that seamlessly atmosphere.
-              </p>
+          <div className="  md:mx-auto  mx-4   my-8 xl:w-[20rem] lg:max-w-[16rem] md:w-[20rem]  lg:mx-auto text-center sm:mx-5 bg-white px-6 py-8  transition-all ease-out duration-200">
+            <div className="w-[4rem] mb-4 h-[4rem] flex items-center px-4 rounded-full  mx-auto bg-red-500   ">
+              <Image src={icon2} />
             </div>
+            <h2 className="text-xl  py-6  font-bold">
+              Ambiance
+            </h2>
+            <p className="text-black/70">
+              Yummy is not just a hotel; it is an immersive experience. Step into an ambiance that seamlessly atmosphere.
+            </p>
+          </div>
 
-            <div className="  md:mx-auto  mx-4   my-8 xl:w-[20rem] lg:max-w-[16rem] md:w-[20rem]  lg:mx-auto text-center sm:mx-5 bg-white px-6 py-8  transition-all ease-out duration-200">
-              <div className="w-[4rem] mb-4 h-[4rem] flex items-center  rounded-full  mx-auto p-4 bg-red-500 ">
-                <Image src={icon3} />
-              </div>
-              <h2 className="text-xl py-6 font-bold">
-
-                Culinary Excellence
-              </h2>
-              <p className="text-black/70">
-                At Yummy, we pride ourselves on delivering a culinary experience that transcends expectations.
-
-              </p>
+          <div className="  md:mx-auto  mx-4   my-8 xl:w-[20rem] lg:max-w-[16rem] md:w-[20rem]  lg:mx-auto text-center sm:mx-5 bg-white px-6 py-8  transition-all ease-out duration-200">
+            <div className="w-[4rem] mb-4 h-[4rem] flex items-center  rounded-full  mx-auto p-4 bg-red-500 ">
+              <Image src={icon3} />
             </div>
+            <h2 className="text-xl py-6 font-bold">
+
+              Culinary Excellence
+            </h2>
+            <p className="text-black/70">
+              At Yummy, we pride ourselves on delivering a culinary experience that transcends expectations.
+
+            </p>
+          </div>
 
           {/* </section> */}
 

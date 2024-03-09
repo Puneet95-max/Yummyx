@@ -23,10 +23,6 @@ const ContactPageContainer = () => {
                 </div>
 
                 {/* <section className="md:flex md:flex-col justify-center items-center"> */}
-
-
-
-
                     <div className="grid grid-cols-1 md:grid-cols-2 md:px-10 p-5 gap-4">
                         <div className="info-item flex items-center   bg-[#EEEEEE] p-1">
                             <div className="bg-red-700 p-3 rounded-full m-2">
@@ -49,7 +45,7 @@ const ContactPageContainer = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold text-gray-500">Email Us</h3>
-                                <p>contact@example.com</p>
+                                <p>Puneet12345v@gmail.com</p>
                             </div>
                         </div>
 
@@ -61,7 +57,7 @@ const ContactPageContainer = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold text-gray-500">Call Us</h3>
-                                <p>+1 5589 55488 55</p>
+                                <p>+91 9463894767</p>
                             </div>
                         </div>
 

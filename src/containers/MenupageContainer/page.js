@@ -34,21 +34,22 @@ const Menupage = () => {
             <p className='text-gray-500 py-1'>OUR MENU</p>
             <p className='text-2xl '>CHECK OUR <span className='text-red-700'> YUMMY MENU</span></p>
           </div>
+
+          <div className='w-full flex  justify-center items-center' >
+            <button onClick={() => handleClick('Starters')} className={`${selectedContent === 'Starters' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `}>Starters
+              <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Starters' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
+            </button>
+            <button onClick={() => handleClick('Breakfast')} className={`${selectedContent === 'Breakfast' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `} >Breakfast
+              <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Breakfast' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
+            </button>
+            <button onClick={() => handleClick('Lunch')} className={`${selectedContent === 'Lunch' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `} >Lunch
+              <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Lunch' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
+            </button>
+            <button onClick={() => handleClick('Dinner')} className={`${selectedContent === 'Dinner' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `}>Dinner
+              <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Dinner' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
+            </button>
+          </div>
         </motion.div>
-        <div className='w-full flex  justify-center items-center' >
-          <button onClick={() => handleClick('Starters')} className={`${selectedContent === 'Starters' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `}>Starters
-            <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Starters' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
-          </button>
-          <button onClick={() => handleClick('Breakfast')} className={`${selectedContent === 'Breakfast' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `} >Breakfast
-            <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Breakfast' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
-          </button>
-          <button onClick={() => handleClick('Lunch')} className={`${selectedContent === 'Lunch' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `} >Lunch
-            <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Lunch' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
-          </button>
-          <button onClick={() => handleClick('Dinner')} className={`${selectedContent === 'Dinner' ? SelectedHeadingCSS : NonSelectedHeadingCSS} `}>Dinner
-            <span className={`h-[2px] w-0 inline-block  bg-red-600 absolute left-0 -bottom-1 transition-[width]  ${selectedContent === 'Dinner' ? 'w-full' : 'w-0'} `} >&nbsp;</span>
-          </button>
-        </div>
         <div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

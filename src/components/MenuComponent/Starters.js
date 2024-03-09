@@ -1,7 +1,6 @@
 import React from 'react'
 import ImageGrid from './ImageGrid'
 
-
 const data = [
   {
     "img": "/menu /lunch/lunch_13.png",
@@ -42,7 +41,6 @@ const data = [
 ]
 
 
-
 const Starters = () => {
   return (
     <>
@@ -51,7 +49,10 @@ const Starters = () => {
         <p className='text-gray-500 py-1'>MENU</p>
         <p className='text-3xl font-bold '> <span className='text-red-700'> Starters</span></p>
       </div>
-      <div className='h-auto my-[3rem] '><ImageGrid items={data} /> </div>
+
+      <div className='h-auto my-[3rem] '>
+        <ImageGrid items={data} />
+      </div>
     </>
   )
 }
