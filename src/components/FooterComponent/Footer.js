@@ -29,7 +29,7 @@ const Footer = () => {
                         <div className='flex flex-col p-2'>
                             <div className='font-bold'>Reservations</div>
                             <p className='font-light text-gray-400 md:text-[13px] '>Phone: +1 5589 55488 55</p>
-                            <p className='font-light text-gray-400 md:text-[13px]' > Email: info@example.com</p>
+                            <p className='font-light text-gray-400 md:text-[13px]' > Email: Puneet12345v@gmail.com</p>
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
 
                 <div className='mt-10 mb-5'>
                     <p className='flex justify-center text-gray-300'>© Copyright  <span className='text-white'> &nbsp;Yummy</span>. All Rights Reserved</p>
-                    <p className='flex justify-center  text-gray-300'>Designed by  <span className='text-white'> &nbsp;BootstrapMade</span></p>
+                    <p className='flex justify-center  text-gray-300'>Designed by  <span className='text-white'> &nbsp;Puneet</span></p>
                 </div>
             </main>
         </>
