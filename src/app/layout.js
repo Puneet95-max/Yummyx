@@ -1,6 +1,7 @@
 import { Inter, Anta } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
+import YummyContextProvider from "@/contexts/YummyContext";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,8 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div>
-          {children}
-          <Analytics/>
+          <YummyContextProvider>
+            {children}
+            <Analytics />
+          </YummyContextProvider>
         </div>
       </body>
     </html>

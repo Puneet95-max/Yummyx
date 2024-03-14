@@ -1,34 +1,31 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { motion } from 'framer-motion';
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
+import { YummyContext } from '@/contexts/YummyContext';
 
 const Navbar = () => {
 
+  const { showProfile } = useContext(YummyContext)
 
   const [isDesktop, setIsDesktop] = useState(false);
 
-
   useEffect(() => {
-
     const handleResize = () => {
-
       setIsDesktop(window.innerWidth < 800);
     };
 
     handleResize();
-
-
     window.addEventListener('resize', handleResize);
-
 
     return () => {
       window.removeEventListener('resize', handleResize);
       console.log(handleResize);
     };
   }, []);
+
 
   const DropdownMenu = () => {
     return (
@@ -71,9 +68,19 @@ const Navbar = () => {
               </h2>
             </div>
             <div>
-              <button className='bg-red-600 text-white px-5  py-2 rounded-full' >
-                Book a Table
-              </button>
+              <Link href={'login'}>
+                {
+                  showProfile ? (<Link href={'/profile'}>
+                    <button className='bg-red-700 hover:bg-red-600 text-white px-6 font-bold  py-2 rounded-full' >
+                      Profile
+                    </button>
+                  </Link>) : (<Link href={'/sign-up'}>
+                    <button className='bg-red-700 hover:bg-red-600 text-white px-6 font-bold  py-2 rounded-full' >
+                      login/sign up
+                    </button>
+                  </Link>)
+                }
+              </Link>
             </div>
             <div className='font-medium flex items-center justify-between relative z-10 ' >
               <button className='w-full flex-col justify-center items-center   lg:flex ' onClick={handleClick} >
@@ -108,10 +115,10 @@ const Navbar = () => {
                         Menu
                       </ScrollLink>
                     </div>
-                    <ScrollLink to="event" smooth={true} duration={500} offset={-70}  onClick={()=>{setIsOpen(false)}}
-                        className="text-black/90  text-xl"  >
-                        Events
-                      </ScrollLink>
+                    <ScrollLink to="event" smooth={true} duration={500} offset={-70} onClick={() => { setIsOpen(false) }}
+                      className="text-black/90  text-xl"  >
+                      Events
+                    </ScrollLink>
                   </nav>
                 </motion.div>
 
@@ -217,9 +224,17 @@ const Navbar = () => {
               </button>
             </div>
             <div className='ml-5 md:ml-24' >
-              <button className='bg-red-700 hover:bg-red-600 text-white px-6  py-2 rounded-full' >
-                Book a Table
-              </button>
+              {
+                showProfile ? (<Link href={'/profile'}>
+                  <button className='bg-red-700 hover:bg-red-600 text-white px-6 font-bold  py-2 rounded-full' >
+                    Profile
+                  </button>
+                </Link>) : (<Link href={'/sign-up'}>
+                  <button className='bg-red-700 hover:bg-red-600 text-white px-6 font-bold  py-2 rounded-full' >
+                    login/sign up
+                  </button>
+                </Link>)
+              }
             </div>
 
           </div>
