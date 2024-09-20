@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
-<meta name="google-site-verification" content="rtbTSySVPsmYDfIpbFtS7Vm4Y8xKTuABW30uQxjEqqw" /
+<meta name="google-site-verification" content="rtbTSySVPsmYDfIpbFtS7Vm4Y8xKTuABW30uQxjEqqw" />
 export const metadata = {
   title: "Yummy",
   description: "Traditional Food resort and  unique recipies",
